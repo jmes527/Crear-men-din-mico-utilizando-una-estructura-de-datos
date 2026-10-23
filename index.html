@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo RD</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Turismo RD</h1>
+        <p>Conoce algunos lugares de nuestro país</p>
+    </header>
+
+    <nav>
+        <ul id="menu"></ul>
+    </nav>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenido a Turismo RD</h2>
+            <p>Jesus Encarnacion 100590273.</p>
+        </section>
+
+        <section id="destinos">
+            <h2>Destinos turísticos</h2>
+            <div class="destinos">
+                <article>
+                    <h3>Samaná</h3>
+                    <p>Conoce sus playas, cascadas y paisajes naturales.</p>
+                </article>
+                <article>
+                    <h3>Punta Cana</h3>
+                    <p>Disfruta de sus playas de arena blanca y agua azul.</p>
+                </article>
+                <article>
+                    <h3>Jarabacoa</h3>
+                    <p>Visita sus montañas, ríos y espacios naturales.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="reservas">
+            <h2>Solicitar información</h2>
+            <p>Completa el formulario para practicar el uso de formularios en una página web.</p>
+            <form id="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+
+                <label for="destino">Destino:</label>
+                <select id="destino" required>
+                    <option value="">Selecciona un destino</option>
+                    <option value="Samaná">Samaná</option>
+                    <option value="Punta Cana">Punta Cana</option>
+                    <option value="Jarabacoa">Jarabacoa</option>
+                </select>
+
+                <button type="submit">Enviar solicitud</button>
+                <p id="mensaje"></p>
+            </form>
+        </section>
+
+        <section id="administrar">
+            <h2>Administrar menú</h2>
+            <p>Agrega nuevas opciones al menú.</p>
+            <form id="formMenu">
+                <label for="nombreMenu">Nombre de la opción:</label>
+                <input type="text" id="nombreMenu" required maxlength="40">
+
+                <label for="enlaceMenu">Enlace (por ejemplo, #destinos):</label>
+                <input type="text" id="enlaceMenu" placeholder="#destinos" required>
+
+                <button type="submit">Agregar opción</button>
+            </form>
+            <ul id="listaOpciones"></ul>
+            <p id="mensajeMenu"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Proyecto académico de menú dinámico usando JSON.</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

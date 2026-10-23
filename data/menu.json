@@ -1,0 +1,24 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "nombre": "Inicio",
+      "enlace": "#inicio"
+    },
+    {
+      "id": 2,
+      "nombre": "Destinos",
+      "enlace": "#destinos"
+    },
+    {
+      "id": 3,
+      "nombre": "Reservas",
+      "enlace": "#reservas"
+    },
+    {
+      "id": 4,
+      "nombre": "Administrar menú",
+      "enlace": "#administrar"
+    }
+  ]
+}
